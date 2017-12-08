@@ -1,0 +1,10 @@
+#lang planet neil/sicp
+(define (summax x y z)
+  (if (> x y)
+      (if (> y z)
+          (+ x y)
+          (+ x z))
+      (if (> x z)
+          (+ y x)
+          (+ y z))))
+(summax 5 3 4)
